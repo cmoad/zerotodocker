@@ -7,7 +7,7 @@ RUN apt-get update &&\
   git checkout v0.2.10-rc.4 &&\
   ./gradlew installApp &&\
   mv /usr/local/src/suro/suro-server/build/install/suro-server /opt/suro &&\
-  rm -rf /usr/local/src/suro
+  rm -rf /usr/local/src/suro /var/lib/apt/lists/*
 
 EXPOSE 7101 7103
 
